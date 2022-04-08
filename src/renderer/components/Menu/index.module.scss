@@ -1,0 +1,13 @@
+.Menucontent {
+  width: 50px;
+  height: 100%;
+  text-align: center;
+  border-right: 1px dotted #aed581;
+  overflow-x: hidden;
+  overflow-y: auto;
+  .hit {
+    background: aliceblue;
+    color: #fda085;
+    transition: background 1s, color 1s;
+  }
+}

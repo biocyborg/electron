@@ -1,0 +1,70 @@
+.content {
+  width: 200px;
+  height: 100%;
+  border-left: 1px dotted #b12a5b;
+}
+
+.back {
+  --borderWidth: 3px;
+  border-radius: var(--borderWidth);
+  content: "";
+  width: calc(110px + var(--borderWidth));
+  height: 50px;
+  background: linear-gradient(
+    36deg,
+    #ffb6c1,
+    #dc143c,
+    #db7093,
+    #c71585,
+    #ff00ff,
+    #8b008b,
+    #9932cc,
+    #8a2be2,
+    #0000ff,
+    #000080,
+    #1e90ff,
+    #00bfff,
+    #ff4500,
+    #a52a2a,
+    #87ceeb
+  );
+  animation: qwe 3s ease alternate infinite;
+  background-size: 300% 300%;
+  z-index: -1;
+}
+
+@keyframes qwe {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.heart {
+  padding-left: 20px;
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 50px;
+    border-radius: 160px 130px 0 0;
+    background: rebeccapurple;
+    transform: rotate(-47deg);
+  }
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 50px;
+    border-radius: 130px 160px 0 0;
+    background: rebeccapurple;
+    transform: translateX(15px) rotate(43deg);
+  }
+}

@@ -1,0 +1,10 @@
+.content {
+  padding: 0 20px;
+  :global(.MuiPaper-root) {
+    margin-bottom: 10px;
+  }
+  .TextField {
+    // display: flex;
+    // align-items: center;
+  }
+}

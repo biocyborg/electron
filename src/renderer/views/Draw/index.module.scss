@@ -1,0 +1,76 @@
+.content {
+  margin-top: 20px;
+  margin-left: 50px;
+}
+
+.head {
+  width: 200px;
+  height: 205px;
+  background: tan;
+  border-radius: 50%;
+  position: relative;
+  .eye {
+    ---w: -18px;
+    --w: 18px;
+    p {
+      position: absolute;
+      top: 40%;
+      left: 50%;
+      width: 30px;
+      height: 50px;
+      border-radius: 50%;
+      background: white;
+      border: 1px solid #000000;
+      &::after {
+        content: "";
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        background: #000000;
+        border-radius: 50%;
+        position: absolute;
+        top: 30%;
+        right: 20px;
+      }
+      &:first-child {
+        transform: translate(calc(-50% + var(---w)), -50%) rotateY(180deg)
+          rotate(-20deg);
+      }
+      &:last-child {
+        transform: translate(calc(-50% + var(--w)), -50%) rotate(-20deg);
+      }
+    }
+  }
+
+  .eyebrow {
+    p {
+      position: absolute;
+      top: 25%;
+      left: 50%;
+      width: 20px;
+      height: 2px;
+      background: #000000;
+      &:first-child {
+        transform: translate(calc(-50% + -20px), -50%) rotate(-20deg);
+      }
+      &:last-child {
+        transform: translate(calc(-50% + 20px), -50%) rotate(20deg);
+      }
+    }
+  }
+
+  .mouth {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    width: 56px;
+    height: 20px;
+    border: 1px solid darkcyan;
+    background: radial-gradient(
+      circle at 31px 82px,
+      transparent 75px,
+      black 75px,
+      transparent 76px
+    );
+  }
+}

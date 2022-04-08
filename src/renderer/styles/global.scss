@@ -1,0 +1,22 @@
+html,
+body,
+#root,
+.AppContent {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.AppContent {
+  display: flex;
+  justify-content: space-between;
+}
+
+// .pointerEvents {
+//   height: 100%;
+//   width: 2px;
+//   background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+//   cursor: col-resize;
+//   pointer-events: auto;
+// }
